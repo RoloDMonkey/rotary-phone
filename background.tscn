@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://divkwrglkp141"]
+
+[ext_resource type="Script" uid="uid://bhwoxarox8rkv" path="res://background.gd" id="1_i7s6n"]
+[ext_resource type="Texture2D" uid="uid://b18ut1qylws7d" path="res://road_01.png" id="1_oabld"]
+
+[node name="Background" type="Node2D" unique_id=1910400763]
+script = ExtResource("1_i7s6n")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=816778800]
+offset_left = -256.0
+offset_top = 136.0
+offset_right = 1840.0
+offset_bottom = 648.0
+texture = ExtResource("1_oabld")
+stretch_mode = 1

@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://dfdp4lpx74vy0"]
 
+[ext_resource type="PackedScene" uid="uid://divkwrglkp141" path="res://background.tscn" id="1_pq8q7"]
+[ext_resource type="PackedScene" uid="uid://b3otqlst6tn17" path="res://pi_cycle.tscn" id="2_pyidc"]
+
 [node name="Root" type="Node2D" unique_id=573213804]
+
+[node name="Background" parent="." unique_id=1910400763 instance=ExtResource("1_pq8q7")]
+
+[node name="PiCycle" parent="." unique_id=686900108 instance=ExtResource("2_pyidc")]
+position = Vector2(227, 351)

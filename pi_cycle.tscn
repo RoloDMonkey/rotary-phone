@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b3otqlst6tn17"]
+
+[ext_resource type="Script" uid="uid://dmhw71jqpf77f" path="res://pi_cycle.gd" id="1_7dva2"]
+[ext_resource type="Texture2D" uid="uid://6a3qg3q0bbpg" path="res://Picycle_sprite.png" id="1_52at2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_84c2w"]
+radius = 52.0
+height = 256.0
+
+[node name="PiCycle" type="CharacterBody2D" unique_id=686900108]
+motion_mode = 1
+script = ExtResource("1_7dva2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=875382879]
+texture = ExtResource("1_52at2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=268583275]
+position = Vector2(0, 68)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_84c2w")

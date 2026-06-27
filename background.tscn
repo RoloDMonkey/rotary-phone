@@ -3,6 +3,12 @@
 [ext_resource type="Script" uid="uid://bhwoxarox8rkv" path="res://background.gd" id="1_i7s6n"]
 [ext_resource type="Texture2D" uid="uid://b18ut1qylws7d" path="res://road_01.png" id="1_oabld"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_84c2w"]
+size = Vector2(1193, 242)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gtia1"]
+size = Vector2(1182, 98)
+
 [node name="Background" type="Node2D" unique_id=1910400763]
 script = ExtResource("1_i7s6n")
 
@@ -13,3 +19,16 @@ offset_right = 1840.0
 offset_bottom = 648.0
 texture = ExtResource("1_oabld")
 stretch_mode = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=357013710]
+position = Vector2(91, 45)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=451228583]
+position = Vector2(481.5, 50)
+shape = SubResource("RectangleShape2D_84c2w")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1912486944]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2" unique_id=133796440]
+position = Vector2(581, 618)
+shape = SubResource("RectangleShape2D_gtia1")
